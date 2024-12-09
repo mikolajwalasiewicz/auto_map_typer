@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button id="send-message"></button>
+    <script>
+      document.getElementById("send-message").addEventListener("click", () => {
+        chrome.runtime.sendMessage({ action: "typeMessage" });
+      });
+    </script>
+  </body>
+</html>
+s
